@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Delivery</title>
+    <link rel="icon" href="./img/logo.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <span class="navbar-brand"><img src="./img/photo3.jpg" alt="error logo"> AR Delivery</span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#services" l="services"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#contact_us" l="contact_us"></a>
+              </li>
+              <select class="language_two" onchange="changeLang(this.value)">
+                <option value="am">Հայերեն</option>
+                <option value="ru">Русский</option>
+                <option value="en">English</option>
+              </select>
+          </div>
+          <select class="language" onchange="changeLang(this.value)">
+            <option value="am">Հայերեն</option>
+            <option value="ru">Русский</option>
+            <option value="en">English</option>
+          </select>
+        </div>
+      </nav>
+
+      <div class="container mt-10">
+        <div class="row">
+            <div class="col-12">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./img/logo.jpg" class="d-block w-100" alt="error image">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/photo2.jpg" class="d-block w-100" alt="error image">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/photo3.jpg" class="d-block w-100" alt="error image">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/photo1.jpg" class="d-block w-100" alt="error image">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+            <div class="col-12 mt-10">
+                <div class="title" l="activity"></div>
+                <span l="delivery_service"></span> <br>
+                <span l="in_yerevan"></span>
+            </div>
+            <div class="col-12 mt-10" id="services">
+                <div class="title" l="services"></div>
+                <hr>
+                <div class="text">
+                    <span l="courier_services"></span> <br>
+                    <span l="services_more"></span> <br>
+                    <span l="in_yerevan"></span> <br>
+                    <span l="driver_service"></span> <br>
+                    <span l="services_more_two"></span> <br>
+                    <span l="taxi_services"></span> <br>
+                    <span l="driver_service_two"></span>
+                </div>
+            </div>
+            <div class="col-12 mt-10" id="contact_us">
+                <div class="title" l="means_of_communication"></div>
+                <hr>
+                <div class="contacts">
+                    <div class="contact mb-3 text-center">
+                        <div class="icon"><i class="fa-solid fa-phone-volume"></i></div>
+                        <a href="tel:+374-99-31-99-44" class="text-dark">+374-99-31-99-44</a>
+                    </div>
+                    <div class="contact mb-3 text-center">
+                        <div class="icon"><i class="fa-brands fa-square-whatsapp"></i></div>
+                        <a href="whatsapp://send?phone=+374-99-31-99-44" class="text-dark">Whatsapp</a>
+                    </div>
+                    <div class="contact mb-3 text-center">
+                        <div class="icon"><i class="fa-brands fa-viber"></i></div>
+                        <a href="viber://chat?number=+374-99-31-99-44" class="text-dark">Viber</a>
+                    </div>
+                    <div class="contact mb-3 text-center">
+                        <div class="icon"><i class="fa-brands fa-square-instagram"></i></div>
+                        <a href="https://instagram.com/ar_delyvery?igshid=NGVhN2U2NjQ0Yg==" class="text-dark" target="_blank">Instagram</a>
+                    </div>
+                    <div class="contact mb-3 text-center">
+                        <div class="icon"><i class="fa-brands fa-square-facebook"></i></div>
+                        <a href="https://facebook.com/profile.php/?id=100051114721870" class="text-dark" target="_blank">Facebook</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="footer mt-5" l="all_rights_reserved"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
