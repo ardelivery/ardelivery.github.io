@@ -94,6 +94,10 @@ body::-webkit-scrollbar-thumb {
   font-weight: 700;
 }
 
+.no_dot {
+  list-style: none;
+}
+
 .contacts {
   display: flex;
   justify-content: space-around;
